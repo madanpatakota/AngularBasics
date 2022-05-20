@@ -1,0 +1,155 @@
+
+
+VSCode
+NojeJs          --- node -v -> verion //succssfully installed
+Angular CLI     --- 
+
+
+https://nodejs.org/en/
+
+
+my-first-project
+
+my-firstProject
+
+
+TypeScript not the javascript  // Logic
+
+//2010 ---   JS //angularJS  ---- MVC  
+-- maintaince , testing , performance,
+architecture
+
+// Module or component architectue.,,,,,,
+
+var s = "";
+var d = 123;
+var k = [];
+
+var s:string = [];
+
+.js ---- code
+.ts ----- code
+
+
+angularjs 2010 -- 2016
+angular2   2016 
++ 6 months angular 3   --- got failure
++ 6 months angular 4    -- regarding routing, authguards ,
++ 6 months angular 5    -- internal updates.
+
+anguar 13 
+
+current companies : angular 9 version or angular 8 or angular 10
+
+
+angular is a framework which we can devlop single page apploications(SPA).
+
+
+
+
+i am having the main file
+
+main file it contains the multi components.....
+
+take the google api plugin or google api library
+
+
+
+=====================================
+
+
+
+
+index.html
+Main.js
+
+
+Main.js
+import all script files
+
+
+
+export script1.js
+export ----
+
+export -----
+
+----
+
+script10.js
+
+
+
+
+
+
+Main.ts  -> Module information
+
+module.ts -> all information about the application
+            like components,services,routing,pipes.....
+
+	 -> app.component
+
+appcomponent contains the some data....
+
+html+css+tsfile
+
+
+ctrl+c
+
+
+i have created the normal class. 
+i have desinged as a component.
+i have exported.
+i have imorted class into the module.
+i have used that class in the appcomponent.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

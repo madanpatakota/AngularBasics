@@ -1,5 +1,49 @@
 app component is working.......
 
-<input type="text" >
 
+<!-- //i ampriting the john value based on the static -->
+<input id="customerID" type="text" [value]="Name"  (keypress)="evtChangeText($event)" >
+
+<br />
+<!-- // i want to convert this text box into checkbox after 2 secs -->
+<!-- <input type="text"> -->
+<input [type]="elementType">
+
+<!-- html element -->
+<span></span>  
+
+<!-- [attributeName|propertyName] -->
+<!-- (event) -->
+{{Name}}
+{{1+2}}
+{{getName()}}
+
+
+
+<!-- var name="John"; -->
+<input type="text" (keyup)="evtLocation(location)"  #location />
+
+
+<!-- var name="John"; -->
+<br>
+<br>
+<br>
+
+
+<!-- here iam doing the property and event databindings -->
+<input type="text" [ngModel]="Address" 
+(ngModelChange)="evtAddressChange($event)"  />
+{{Address}}
+
+<br>
+<br>
+ <input type="text" [(ngModel)]="CustomerID" />
+ {{CustomerID}}
+<!-- [()] -->
+
+
+
+
+
+<!-- my own component -->
 <app-customer></app-customer>

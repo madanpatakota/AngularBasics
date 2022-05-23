@@ -105,6 +105,22 @@ i have imorted class into the module.
 i have used that class in the appcomponent.
 
 
+var name="John";  // the way how we are doing in js.
+
+//string interpolation.
+//one way databinding  
+     a.propertydatabinding(from ts to html)
+     b.eventdatabinidng(html to ts)
+
+
+template driven approah
+reactive approach
+
+//two way databinding
+[(ngModel)]
+propertydatabinding + eventdatabinding
+
+
 
 
 

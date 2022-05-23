@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,52 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularBasics';
+  
+  Name = "John smith";
+  Address = "India";
+  CustomerID = "cus123"
+
+  constructor(){
+    
+        setTimeout(() => {
+          this.elementType = "checkbox";
+        }, 2000);
+  }
+
+  getName(){
+    return "from getName method".concat(this.Name);
+  }
+
+
+  elementType= "text";
+
+  evtChangeText(event){
+    console.log("keypress has happend",event);
+  }
+
+  s:string = "John";
+  
+
+  evtLocation(locationref:HTMLInputElement){
+     console.log(locationref.value);
+  }
+
+//   evtLocation(locationref:ElementRef){
+//     console.log(locationref.nativeElement);
+//  }
+
+
+  evtAddressChange(address){
+     this.Address = address;
+     console.log(address);
+  }
+
+
+  // getName(name){
+
+  // }
+
+
 }
 
 

@@ -187,6 +187,10 @@ can we create the my own directive(custom directive) in the angular?
 Yeah we can
 
 
+property databinding  <input [value]="" />
+event databinding     <input (keyup)="()" />
+
+<
 
 
 

@@ -1,0 +1,13 @@
+<span>Customer Page.</span>
+{{customerDetails.Name}}
+
+<!-- can i do the same approch by typescript code -->
+<!-- @viewchild -->
+<input id="customerID" type="text" [value]="customerDetails.Name" #customerName/>
+<!-- <input type="text" [ngModel]="customerDetails.Name" /> -->
+
+<!-- post from appcustomer to appcompoent -->
+<!-- <input type="button" /> -->
+
+<button  (click)="evtPostcustomerDetails(customerName)">By local ref Click</button>
+<button  (click)="evtPostcustomerDetails1()">by view child Click</button>

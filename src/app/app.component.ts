@@ -15,8 +15,11 @@ export class AppComponent {
 
    //var obj = {ID:1,Name:".net"};
 
-   subjects1 = [{ID:1,Name:".net",Location:"bangonore"},{ID:2,Name:"angular"},{ID:3,Name:"java"}]; //array of the objects
+   isShow = false;
 
+   subjects1 = [{ID:1,Name:".net",Location:"bangonore"},{ID:2,Name:"angular"},{ID:3,Name:"java"}]; //array of the objects
+   
+   customer = {Id:123,Name:"Clark"};
 
   //  for(int i=0;i<10;i++){
 
@@ -40,9 +43,17 @@ export class AppComponent {
    this.isApplyStyle==true ?  myArray2.push(1): myArray2.push(2);
 
 
+   
 
 
   }
+
+  latestCustomerID = "";
+  importLatestCustomerDetails($event){
+     console.log("importing the customervalue" ,$event)
+     this.latestCustomerID  = $event;
+  }
+
 
 }
 

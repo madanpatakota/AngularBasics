@@ -1,44 +1,98 @@
 app component is working.......
 
+{{isApplyStyle}}
+
+<div [ngStyle]="isApplyStyle == true ?
+    { 'height': '100px','width':'100px','background-color': 'yellow'} 
+    : 
+    { 'height': '50px','width':'50px','background-color': 'red'} ">
+</div>
+
+<hr>
+<div [ngClass]="isApplyStyle != false ? 'mybackgroundcolorbrownClass' : 'mybackgroundcolorClass'">
+</div>
+
+<div *ngIf="isApplyStyle == false">
+    <!-- based on the condition i can add or  the element in 
+    the dom -->
+    <input type="button" value="Click" />
+</div>
+
+
+<div 
+[ngStyle]="isApplyStyle == false ? {'visibility':'visible'} : 
+{'visibility':'hidden'} ">
+    <input type="button" value="Click1" />
+</div>
+
+
+
+
+<!-- <input [ngStyle]="isApplyStyle == true? {'background-color':'red'}:''" /> -->
+
+<hr>
+<input style="background-color: red;" />
+<input class="mybackgroundcolor" />
+
+
+
+<hr>
+<!-- List elements -->
+{{subjects}}
+<ul *ngFor="let subject of subjects">
+    <!-- subject contais th string  -->
+   <li>{{subject}}</li> 
+</ul>
+
+{{subjects1}}
+
+<ul *ngFor="let subject of subjects1">
+    <!-- 3 values -->
+    <!-- subject contians the object ref -->
+    <li>{{subject.Location}} - {{ subject.name}}</li> 
+    <!-- <span [ngStyle]="subject.Location.length>6?{backg}"></span> -->
+ </ul>
+
+
 
 <!-- //i ampriting the john value based on the static -->
-<input id="customerID" type="text" [value]="Name"  (keypress)="evtChangeText($event)" >
+<!-- <input id="customerID" type="text" [value]="Name"  (keypress)="evtChangeText($event)" > -->
 
-<br />
+<!-- <br /> -->
 <!-- // i want to convert this text box into checkbox after 2 secs -->
 <!-- <input type="text"> -->
-<input [type]="elementType">
+<!-- <input [type]="elementType"> -->
 
 <!-- html element -->
-<span></span>  
+<!-- <span></span>   -->
 
 <!-- [attributeName|propertyName] -->
 <!-- (event) -->
-{{Name}}
+<!-- {{Name}}
 {{1+2}}
-{{getName()}}
+{{getName()}} -->
 
 
 
 <!-- var name="John"; -->
-<input type="text" (keyup)="evtLocation(location)"  #location />
+<!-- <input type="text" (keyup)="evtLocation(location)"  #location /> -->
 
 
 <!-- var name="John"; -->
+<!-- <br>
 <br>
-<br>
-<br>
+<br> -->
 
 
 <!-- here iam doing the property and event databindings -->
-<input type="text" [ngModel]="Address" 
+<!-- <input type="text" [ngModel]="Address" 
 (ngModelChange)="evtAddressChange($event)"  />
 {{Address}}
 
 <br>
 <br>
  <input type="text" [(ngModel)]="CustomerID" />
- {{CustomerID}}
+ {{CustomerID}} -->
 <!-- [()] -->
 
 
@@ -46,4 +100,4 @@ app component is working.......
 
 
 <!-- my own component -->
-<app-customer></app-customer>
+<!-- <app-customer></app-customer> -->

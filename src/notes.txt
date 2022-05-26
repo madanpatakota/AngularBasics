@@ -125,6 +125,86 @@ propertydatabinding + eventdatabinding
 
 
 
+interface i1{
+   string getName();
+}
+
+interface i2:i3{
+  string getName();
+  
+}
+
+interface i3{
+  int getId();
+}
+
+
+
+class Customer : i1 , i2 {
+
+ int? i = 10;
+
+ var k = i ?? 10;
+
+ private Customer(){
+  
+ }
+
+ public static customer instace(){
+   Customer cus = new Customer();
+   return cus;
+  }
+  
+  i1.getName(){
+
+  }
+
+
+  new customer()
+  
+}
+
+ customer obj = Customer.instance();
+ customer cus1;
+
+if(op.max() < target){
+  
+}
+
+op = [2,11,3,15];
+target = 5;  2,3
+output = [0,2];
+
+
+List
+
+
+
+WHAT ARE the predefined directives in the angualr?
+ngModel ngStyle ngClass ngIf ngSwitch ngSwithCase ngFor
+
+can we create the my own directive(custom directive) in the angular?
+Yeah we can
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
 
 
 

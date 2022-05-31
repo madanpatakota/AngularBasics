@@ -190,7 +190,10 @@ Yeah we can
 property databinding  <input [value]="" />
 event databinding     <input (keyup)="()" />
 
-<
+
+
+<input type="text" keypress="evtKeypress()" />
+
 
 
 

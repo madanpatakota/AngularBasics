@@ -1,0 +1,20 @@
+/* input{
+    background-color: yellow;
+} */
+
+.mybackgroundcolor{
+    background-color: red;
+}
+
+.mybackgroundcolorClass{ 
+    height: 100px; 
+    width: 100px;
+    background-color: yellow
+} 
+
+
+.mybackgroundcolorbrownClass{ 
+    height: 100px; 
+    width: 100px;
+    background-color: brown
+} 

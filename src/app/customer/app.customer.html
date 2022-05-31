@@ -1,3 +1,4 @@
+<div #compoentref>
 <span>Customer Page.</span>
 {{customerDetails.Name}}
 
@@ -11,3 +12,13 @@
 
 <button  (click)="evtPostcustomerDetails(customerName)">By local ref Click</button>
 <button  (click)="evtPostcustomerDetails1()">by view child Click</button>
+<button (click)="evtContentDetails()">CheckConent</button>
+
+<input type="text" [(ngModel)]="name" (keypress)="caling()" />
+
+
+<!-- below code contains the conent of the customer component which declares in the appcomponent -->
+<!-- reight now i am having the textbox in the ngcontent -->
+<ng-content></ng-content>
+</div>
+

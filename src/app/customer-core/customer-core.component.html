@@ -1,0 +1,154 @@
+app component is working.......
+
+
+<hr>
+<h1>Angular directives</h1>
+{{isApplyStyle}}
+<!-- 
+<div [ngStyle]="isApplyStyle == true ?
+    { 'height': '100px','width':'100px','background-color': 'yellow'} 
+    : 
+    { 'height': '50px','width':'50px','background-color': 'red'} ">
+</div> -->
+
+<!-- <hr>
+<div [ngClass]="isApplyStyle != false ? 'mybackgroundcolorbrownClass' : 'mybackgroundcolorClass'">
+</div> -->
+
+<!-- can i handle else condition here -->
+<!-- based on the condition i can add or  the element in 
+    the dom -->
+<!-- <div *ngIf="isApplyStyle == false">
+    
+    <input type="button" value="Click" />
+</div> -->
+
+<!-- 
+<div 
+[ngStyle]="isApplyStyle == false ? {'visibility':'visible'} : 
+{'visibility':'hidden'} ">
+    <input type="button" value="Click1" />
+</div> -->
+
+
+
+
+<!-- <input [ngStyle]="isApplyStyle == true? {'background-color':'red'}:''" /> -->
+<!-- 
+<hr>
+<input style="background-color: red;" />
+<input class="mybackgroundcolor" /> -->
+
+
+
+<hr>
+<!-- List elements -->
+{{subjects}}
+<!-- subject contais th string  -->
+<!-- <ul *ngFor="let subject of subjects">
+    
+   <li>{{subject}}</li> 
+</ul> -->
+
+{{subjects1}}
+
+<ul *ngFor="let subject of subjects1">
+    <!-- 3 values -->
+    <!-- subject contians the object ref -->
+    <li>{{subject.Location}} - {{ subject.name}}</li> 
+    <!-- <span [ngStyle]="subject.Location.length>6?{backg}"></span> -->
+ </ul>
+
+
+<hr>
+
+<!-- ishow = true;
+!ishow ---- > false -->
+<!-- if(false){
+    print showlabel
+}
+else{
+    print ngtempate
+} -->
+
+
+<div>
+    <label *ngIf="isShow ; else templateRef">Show the label</label>
+</div>
+
+<!-- some kind of ghost -->
+<ng-template #templateRef>
+   <span>show the span</span>
+</ng-template>
+
+
+
+
+
+<!-- //i ampriting the john value based on the static -->
+<!-- <input id="customerID" type="text" [value]="Name"  (keypress)="evtChangeText($event)" > -->
+
+<!-- <br /> -->
+<!-- // i want to convert this text box into checkbox after 2 secs -->
+<!-- <input type="text"> -->
+<!-- <input [type]="elementType"> -->
+
+<!-- html element -->
+<!-- <span></span>   -->
+
+<!-- [attributeName|propertyName] -->
+<!-- (event) -->
+<!-- {{Name}}
+{{1+2}}
+{{getName()}} -->
+
+
+
+<!-- var name="John"; -->
+<!-- <input type="text" (keyup)="evtLocation(location)"  #location /> -->
+
+
+<!-- var name="John"; -->
+<!-- <br>
+<br>
+<br> -->
+
+
+<!-- here iam doing the property and event databindings -->
+<!-- <input type="text" [ngModel]="Address" 
+(ngModelChange)="evtAddressChange($event)"  />
+{{Address}}
+
+<br>
+<br>
+ <input type="text" [(ngModel)]="CustomerID" />
+ {{CustomerID}} -->
+<!-- [()] -->
+
+<!-- my own component -->
+<!-- (passcustomerDetails)="importLatestCustomerDetails()" -->
+<!-- $event containsthe customerid value -->
+<!-- <app-customer (passcustomerDetails)="importLatestCustomerDetails($event)" [customerDetails]="customer"></app-customer> -->
+
+<app-customer (passcustomerDetails)="importLatestCustomerDetails($event)"
+     [customerDetails]="customer">
+    <!-- <span>I am the content from appcomponent</span> -->
+    <input type="text"  #locationName/>
+</app-customer>
+
+<!-- 
+<span>content of the span</span>
+<div> content </div> -->
+
+
+<!-- 
+incase latestCustomerID data is not avaible then i have to show the span with redcolor and 
+value is the "No data" -->
+
+<span style="background-color:yellow">{{latestCustomerID}}</span>
+
+<!-- 
+
+property databinding  <input [value]="" />   value we do by @input decarator (custom property databinding)
+event databinding     <input (keyup)="()" /> event we do by @output decartoar (custom event binding)
+-->

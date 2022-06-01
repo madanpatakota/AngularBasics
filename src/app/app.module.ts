@@ -3,7 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { Customer } from './customer/app.customer';
 import { FormsModule } from '@angular/forms';
-import { CustomerCoreComponent } from './customer-core/customer-core.component'
+import { CustomerCoreComponent } from './customer-core/customer-core.component';
+import { OrderComponent } from './order/order.component';
+import { OrderDetailsComponent } from './order-details/order-details.component'
 
 // Component
 
@@ -11,7 +13,9 @@ import { CustomerCoreComponent } from './customer-core/customer-core.component'
   declarations: [
     AppComponent,
     Customer,
-    CustomerCoreComponent
+    CustomerCoreComponent,
+    OrderComponent,
+    OrderDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+<div class="container" style="margin-top:50px">
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label">Order Name</label>
+        <div class="col-sm-4">
+            <input name="OName" type="text" class="form-control"
+            [(ngModel)]="orderName">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label">ShipName</label>
+        <div class="col-sm-4">
+            <input [(ngModel)]="shipName" type="text"
+             name="SName" class="form-control">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label">Area</label>
+        <div class="col-sm-4">
+            <select name="AName" class="form-select"
+             aria-label="Default select example" [(ngModel)]="Area">
+                <!-- <option>HSR</option>
+                <option>SlikBoard</option>
+                <option>BTM</option> -->
+                <option [value]="area.Code" 
+                *ngFor="let area of Areas">
+                {{area.Name}}</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <button (click)="evtSubmit()" type="button" class="btn btn-primary">Submit</button>
+</div>

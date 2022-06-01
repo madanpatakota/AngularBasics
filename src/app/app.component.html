@@ -9,54 +9,18 @@ component communication -->
 
 <!-- service is a very simple concept -->
 
-<div class="container" style="margin-top:50px">
-    <div class="row mb-3">
-        <label class="col-sm-2 col-form-label" >Order Name</label>
-        <div class="col-sm-4">
-            <input name="OName" type="text" class="form-control">
-        </div>
-    </div>
+<!-- i have created one form.
+when i click the submit button . i want to push the record in the table -->
 
-    <div class="row mb-3">
-        <label class="col-sm-2 col-form-label">ShipName</label>
-        <div class="col-sm-4">
-            <input type="text" name="SName" class="form-control">
-        </div>
-    </div>
+  <!-- posting -->
+  <app-order></app-order>
 
-    <div class="row mb-3">
-        <label class="col-sm-2 col-form-label">Area</label>
-        <div class="col-sm-4">
-            <select name="AName" class="form-select" aria-label="Default select example">
-                <option>HSR</option>
-                <option>SlikBoard</option>
-                <option>BTM</option>
-            </select>
-        </div>
-    </div>
+  <hr>
+  <!-- Orders is the array which is useful for giving the data to 
+  the app-order-details -->
 
-    <div class="dropdown-center">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
-          Centered dropdown
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Action two</a></li>
-          <li><a class="dropdown-item" href="#">Action three</a></li>
-        </ul>
-      </div>
+  <!-- fetching -->
+  <app-order-details  [Orders] = "Orders"></app-order-details>
 
 
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-
-    <button type="button" class="btn btn-primary">Submit</button>
-    <hr>
-</div>
+  

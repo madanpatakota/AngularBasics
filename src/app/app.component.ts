@@ -8,8 +8,40 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
+
+  // Order = { 
+  //   OrderName:"Biryani" , 
+  //   ShipName:"Swiggy" ,
+  //    Area:"BTM"}
+
+  Orders = [
+    {
+      OrderName: "Biryani",
+      ShipName: "Swiggy",
+      Area: "BTM"
+    },
+    {
+      OrderName: "Dosa",
+      ShipName: "Swiggy",
+      Area: "BTM"
+    }]
+ 
+    postOrderDetails($event){
+      console.log("to appcomponent");
+      console.log($event)
+      //iam adding the data is from orderdetails component...
+      this.Orders.push($event);
+
+    }
 
 }
+
+
+
+
+
+
 
 
 //=====================================================

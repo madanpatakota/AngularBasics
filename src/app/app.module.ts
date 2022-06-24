@@ -5,7 +5,9 @@ import { Customer } from './customer/app.customer';
 import { FormsModule } from '@angular/forms';
 import { CustomerCoreComponent } from './customer-core/customer-core.component';
 import { OrderComponent } from './order/order.component';
-import { OrderDetailsComponent } from './order-details/order-details.component'
+import { OrderDetailsComponent } from './order-details/order-details.component';
+import { DynamicelementComponent } from './dynamicelement/dynamicelement.component';
+import { MyDirectiveDirective } from './my-directive.directive'
 
 // Component
 
@@ -15,7 +17,9 @@ import { OrderDetailsComponent } from './order-details/order-details.component'
     Customer,
     CustomerCoreComponent,
     OrderComponent,
-    OrderDetailsComponent
+    OrderDetailsComponent,
+    DynamicelementComponent,
+    MyDirectiveDirective
   ],
   imports: [
     BrowserModule,

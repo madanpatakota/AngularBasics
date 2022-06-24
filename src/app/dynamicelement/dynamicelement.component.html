@@ -1,0 +1,48 @@
+<div style="margin-left: 50px">
+  <div *ngIf="false; else templateRef">Its working...</div>
+
+  <ng-template #templateRef>
+    <label> I am testing the ng-template wheater its working or not</label>
+  </ng-template>
+
+  <!-- 
+My plan : 
+i am going to take the one container . based on the requirement i will add
+the respective into the container -->
+
+  <!-- task :  i want to display the only first paragraph -->
+  <!-- knowledge : you should do know ng-template -->
+
+  <!-- Container : you should do know ng-template -->
+
+  <!-- I have to take the container  -->
+
+  <ng-container #containerRef> </ng-container>
+
+  <ng-template #templateRefOne>
+    <p>First Paragraph</p>
+  </ng-template>
+
+  <ng-template #templateRefTwo>
+    <p>Second Paragraph</p>
+  </ng-template>
+
+  <!-- <input type="text" #textRef> -->
+
+  <button class="btn btn-primary" (click)="evtSubmit()">Click</button>
+
+  <div
+    style="border: 2px solid red; 
+    height: 100px; width: 100px"
+    appMyDirective [myChoiceColor]="colorName"
+  ></div>
+
+
+  <!-- <span
+    style="border: 2px solid red; 
+    height: 100px; width: 100px"
+    appMyDirective
+  ></span> -->
+
+  <input type="checkbox" checked />
+</div>

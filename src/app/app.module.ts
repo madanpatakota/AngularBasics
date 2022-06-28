@@ -7,7 +7,9 @@ import { CustomerCoreComponent } from './customer-core/customer-core.component';
 import { OrderComponent } from './order/order.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { DynamicelementComponent } from './dynamicelement/dynamicelement.component';
-import { MyDirectiveDirective } from './my-directive.directive'
+import { MyDirectiveDirective } from './my-directive.directive';
+import { ObservableOneComponent } from './observable-one/observable-one.component';
+import { CustomObservableComponent } from './custom-observable/custom-observable.component'
 
 // Component
 
@@ -19,7 +21,9 @@ import { MyDirectiveDirective } from './my-directive.directive'
     OrderComponent,
     OrderDetailsComponent,
     DynamicelementComponent,
-    MyDirectiveDirective
+    MyDirectiveDirective,
+    ObservableOneComponent,
+    CustomObservableComponent
   ],
   imports: [
     BrowserModule,
